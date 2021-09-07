@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Color Game</title>
+  </head>
+  <body>
+    <main>
+      <section class="player player--0 player--active">
+        <p class="winner winner--0 hidden">WIN!</p>
+        <h2 class="name" id="name--0">Player 1</h2>
+        <p class="score" id="score--0">12</p>
+        <div class="current current--0">
+          <p class="current-label">Current</p>
+          <p class="current-score" id="current--0">0</p>
+        </div>
+      </section>
+      <section class="player player--1">
+        <p class="winner winner--1 hidden">WIN!</p>
+        <h2 class="name" id="name--1">Player 2</h2>
+        <p class="score" id="score--1">22</p>
+        <div class="current current--1">
+          <p class="current-label">Current</p>
+          <p class="current-score" id="current--1">0</p>
+        </div>
+      </section>
+
+      <section class="instruction hidden">
+        <button class="close">x</button>
+        <h1>INSTRUCTION</h1>
+        <p>
+          The game is always started by player number 1. The colours red blue
+          yellow purple give one point, black gives a minus one point and white
+          sets all the colours collected to zero. If you want to draw a colour
+          you need to press the ''draw'' button, then to keep your score you
+          need to press the ''hold'' button. The player who reaches 50 points
+          first wins the game.
+        </p>
+        <h2>GOOD LUCK!!!</h2>
+      </section>
+
+      <img src="Rectangle 1.png" class="rectangle" />
+      <img src="+1.png" class="points" />
+      <button class="btn btn--info">Instruction</button>
+      <button class="btn btn--new">New Game</button>
+      <button class="btn btn--change">Change</button>
+      <button class="btn btn--hold">Hold</button>
+      <div class="overlay hidden"></div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
